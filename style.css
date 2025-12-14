@@ -101,7 +101,13 @@ html {
   width: fit-content;
   padding: 0.7em 4em;
 }
-
+.shop-item img, .hero, #ad-content, .description{
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+.shop-item img:hover~ .description, .shop-item img:hover, .hero:hover, #ad-content:hover{
+  transform: scale(1.05);
+}
 .shop-item img {
   width: 100%;
   height: 85%;
