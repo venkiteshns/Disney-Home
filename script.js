@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function(){
             heroContent.style='display:block';
             mobileMedia.style='display:none';
             heroAdjust.style='display:none'
-            hero.style.backgroundImage= "url('Assets/hero.jpeg')";
+            hero.style.backgroundImage= "url('Assets/hero2.jpeg')";
 
         }
     }
