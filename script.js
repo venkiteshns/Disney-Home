@@ -9,14 +9,25 @@ document.addEventListener('DOMContentLoaded', function(){
     const heroAdjust = document.getElementById('hero-adjust');
     const heroContent = document.getElementById('hero-content');
     const mobileMedia = document.getElementById('mobile-media');
+    const playButton = document.getElementById('play-button');
+    const adContent = document.getElementById('ad-content');
 
     toggleButton.addEventListener('click', function(){
         toggleButton1.classList.toggle('toggle-display');
         toggleButton2.classList.toggle('toggle-display');
     })
 
-    
-    
+    playButton.addEventListener('mouseenter' ,function() {
+        playButton.src = "Assets/icons8-play-50.png";
+    })
+    playButton.addEventListener('mouseleave', function(){
+        playButton.src = "Assets/icons8-play-button-circled-50.png";
+    })
+    playButton.addEventListener('click', function(){
+        console.log(adContent.innerHTML);
+        adContent.innerHTML= `<video controls autoplay class="spider-man" src="Assets/vide.mp4"></video>`;
+        playButton.style= 'display:none';
+    })
     function heroControl(e){
         if(e.matches){
             console.log('match');

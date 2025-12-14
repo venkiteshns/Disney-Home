@@ -6,6 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body, html {
+    overflow-x: hidden; 
+}
 .nav-links {
   display: flex;
   align-items: center;
@@ -97,8 +100,11 @@ body {
     width: fit-content;
     padding: 0.7em 4em;
 }
+.shop{
+  width: 100vw;
+}
 .shop-item{
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .shop-item img{
     width: 100%;
@@ -106,7 +112,7 @@ body {
     object-fit: fill;
 }
 .description{
-  width: 99%;
+  width: 100%;
   padding-bottom: 0.3em;
   display: flex;
   flex-direction: column;
@@ -123,6 +129,30 @@ body {
 }
 .description figcaption:last-child{
   font-weight: 700;
+}
+.advertisment{
+  position: relative;
+}
+.heading{
+  font-size: 2em;
+  font-weight: 400;
+}
+.ad{
+  width: 100%;
+}
+.spider-man{
+  width: 100%;
+  object-fit: contain;
+}
+.video-spider{
+  width: 100%;
+  object-fit: contain;
+}
+.play-button{
+  position: absolute;
+  top: 47%;
+  right: 40%;
+  width: 80px;
 }
       @media (max-width: 767.98px) {
         .navbar-brand-fixed {
@@ -170,5 +200,15 @@ body {
         }
         .description figcaption{
           color: black;
+        }
+      }
+      @media (max-width: 807px) and (min-width: 768px) {
+        .adjust-1{
+          max-height: 91% !important;
+        }
+      }
+      @media (max-width: 776px) and (min-width: 768px) {
+        .adjust-2{
+          max-height: 91% !important;
         }
       }
