@@ -6,8 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
-body, html {
-    overflow-x: hidden; 
+body,
+html {
+  overflow-x: hidden;
 }
 .nav-links {
   display: flex;
@@ -24,94 +25,89 @@ body, html {
 .navbar-brand img {
   height: 1.9em;
 }
-.navbar-toggler{
-    border: none !important;
+.navbar-toggler {
+  border: none !important;
 }
-.toogler-button-menu{
-    height: 0.9em;
-    width: 0.9em;
-    margin-top: -0.3em;
+.toogler-button-menu {
+  height: 0.9em;
+  width: 0.9em;
+  margin-top: -0.3em;
 }
-.toggle-display{
-    display: none;
+.toggle-display {
+  display: none;
 }
-.hero{
-    background-size:cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
 }
-.hero-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-    width: 27%;
-    height: 100%;
-    margin: 10% 8% 15% 0%;
-    margin-left: auto;
-    ;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  width: 27%;
+  height: 100%;
+  margin: 10% 8% 15% 0%;
+  margin-left: auto;
 }
-.hero-adjust{
-    margin: 25% 8% 50% 10%;
+.hero-adjust {
+  margin: 25% 8% 50% 10%;
 }
-.hero-text{
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
+.hero-text {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
 }
-.hero-content img{
-    width: 100%;
-    margin-right: 5%;
-    object-fit: contain;
+.hero-content img {
+  width: 100%;
+  margin-right: 5%;
+  object-fit: contain;
 }
-.hero-content button{
-    font-family: "Noto Sans", sans-serif;
-    border: none;
-    color: rgb(38, 110, 161);
-    font-weight: 600;
-    font-size: 0.8em;
-    padding: 0.5em 2.9em;
-    border-radius: 15px;background-color: #fff;
+.hero-content button {
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  color: rgb(38, 110, 161);
+  font-weight: 600;
+  font-size: 0.8em;
+  padding: 0.5em 2.9em;
+  border-radius: 15px;
+  background-color: #fff;
 }
-.mobile-media{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0.3rem;
-    margin-left: auto;
-    background-color: rgb(4, 4, 111);
-    padding: 1.5em 0 5em 0;
+.mobile-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.3rem;
+  margin-left: auto;
+  background-color: rgb(4, 4, 111);
+  padding: 1.5em 0 5em 0;
 }
-.mobile-media img{
-    width: 80%;
-    margin-right: 5%;
+.mobile-media img {
+  width: 80%;
+  margin-right: 5%;
 }
-.mobile-media button{
-    font-family: "Noto Sans", sans-serif;
-    border: none;
-    color: rgb(38, 110, 161);
-    font-weight: 600;
-    border-radius: 25px;
-    width: fit-content;
-    padding: 0.7em 4em;
+.mobile-media button {
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  color: rgb(38, 110, 161);
+  font-weight: 600;
+  border-radius: 25px;
+  width: fit-content;
+  padding: 0.7em 4em;
 }
-.shop{
-  width: 100vw;
+
+.shop-item img {
+  width: 100%;
+  height: 85%;
+  object-fit: fill;
 }
-.shop-item{
-  /* background-color: aqua; */
-}
-.shop-item img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-.description{
+.description {
   width: 100%;
   padding-bottom: 0.3em;
   display: flex;
@@ -123,92 +119,198 @@ body, html {
   top: -3em;
   background: linear-gradient(to top, black 40%, transparent);
 }
-.description figcaption{
+.description figcaption {
   color: #fff;
   font-weight: 500;
 }
-.description figcaption:last-child{
+.description figcaption:last-child {
   font-weight: 700;
 }
-.advertisment{
-  position: relative;
+.main-content {
+  background-color: #e4e4e4;
 }
-.heading{
+.advertisment {
+  position: relative;
+  cursor: pointer;
+}
+.heading {
   font-size: 2em;
   font-weight: 400;
 }
-.ad{
+.ad {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.spider-man{
+.spider-man {
   width: 100%;
   object-fit: contain;
 }
-.video-spider{
+.video-spider {
   width: 100%;
   object-fit: contain;
 }
-.play-button{
+.play-button {
   position: absolute;
-  top: 47%;
-  right: 40%;
   width: 80px;
 }
-      @media (max-width: 767.98px) {
-        .navbar-brand-fixed {
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 1050; 
-          top: 0;
-          margin-left: 0 !important; 
-        }
-        .navbar-position-context {
-            position: relative;
-        }
-        .navbar-collapse {
-          margin-top: 1rem; 
-        }
-      }
-      @media (min-width: 768px) {
-        .navbar-collapse.border-top {
-          border-top: none !important;
-          padding-top: 0 !important; 
-        }
-        .navbar-nav .nav-item.border-top {
-          border-top: none !important;
-        }
-      }
-      @media (max-width: 960px) {
-        .hero-content{
-            width: 37%;
-            margin-right: 3%;
-        }
-        .hero-content img{
-            width: 100%;
-        }
-      }
-      @media (max-width: 575px) {
-        .shop-item{
-          display: flex;
-          flex-direction: column;
-        }
-        .description{
-          background: none;
-          margin: 3em 0;
-          position: static;
-        }
-        .description figcaption{
-          color: black;
-        }
-      }
-      @media (max-width: 807px) and (min-width: 768px) {
-        .adjust-1{
-          max-height: 91% !important;
-        }
-      }
-      @media (max-width: 776px) and (min-width: 768px) {
-        .adjust-2{
-          max-height: 91% !important;
-        }
-      }
+.line p {
+  font-size: 0.9em;
+}
+.Down-line {
+  font-size: 240%;
+}
+.holiday-one {
+  width: 100%;
+  max-height: 470px;
+  object-fit: fill;
+  object-position: top;
+}
+.holiday-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5em 0;
+}
+.holiday-description figcaption:first-child {
+  font-size: 1.4em;
+}
+.holiday-description figcaption:last-child {
+  font-weight: 500;
+}
+.register {
+  font-weight: 100 !important;
+  font-size: 0.9em;
+}
+.in-links {
+  margin-left: 3em;
+  display: flex;
+  gap: 3em;
+}
+.in-links a {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9em;
+}
+.footer-1 {
+  display: flex;
+  align-items: center;
+}
+.social {
+  margin-left: auto;
+  display: flex;
+  gap: 1em;
+}
+.social i {
+  font-size: 1.4em;
+}
+.footer-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-2 img{
+  width: 5em;
+}
+.footer-links ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer-links ul li{
+  font-size: 0.9em;
+  list-style-type: none;
+  margin-left: 1em;
+}
+.footer-item:hover{
+  color: blue !important;
+}
+.copyright{
+  display: flex;
+  align-items: center;
+}
+.copyright p{
+  font-size: 0.7em;
+}
+@media (max-width: 767.98px) {
+  .navbar-brand-fixed {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    top: 0;
+    margin-left: 0 !important;
+  }
+  .navbar-position-context {
+    position: relative;
+  }
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-collapse.border-top {
+    border-top: none !important;
+    padding-top: 0 !important;
+  }
+  .navbar-nav .nav-item.border-top {
+    border-top: none !important;
+  }
+}
+@media (max-width: 960px) {
+  .hero-content {
+    width: 37%;
+    margin-right: 3%;
+  }
+  .hero-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .shop-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .description {
+    background: none;
+    margin: 3em 0;
+    position: static;
+  }
+  .description figcaption {
+    color: black;
+  }
+}
+@media (max-width: 807px) and (min-width: 768px) {
+  .adjust-1 {
+    max-height: 91% !important;
+  }
+}
+@media (max-width: 776px) and (min-width: 768px) {
+  .adjust-2 {
+    max-height: 91% !important;
+  }
+}
+@media (min-width: 1026px) {
+  .main-content {
+    padding: 0 3em !important;
+  }
+}
+@media (min-width: 1237px) {
+  .main-content {
+    padding: 0 5em !important;
+  }
+}
+@media (max-width: 960px) {
+  .footer-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+  .social {
+    margin: 0;
+  }
+}
